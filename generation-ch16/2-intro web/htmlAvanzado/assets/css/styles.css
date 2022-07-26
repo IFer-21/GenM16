@@ -1,0 +1,38 @@
+c
+
+ul{
+list-style-type: square;
+}
+
+ol{
+    list-style: upper-alpha;
+}
+
+.sub{
+    border: 3px dotted red;
+}
+
+h1{
+    color: red;
+    background-color: aqua;
+    width: fit-content;
+}
+
+div{
+    color: aliceblue;
+    border: 3px dotted red;
+    background-color: rgb(121, 188, 226);
+    width: fit-content;
+}
+
+a{
+    background-color: rgb(128, 171, 196);
+    width: fit-content;
+    color: green;
+    display: block;
+    height: 40px;
+    border: dotted 1px white;
+    display: inline-block;
+}
+
+span{background-color: bisque;}
