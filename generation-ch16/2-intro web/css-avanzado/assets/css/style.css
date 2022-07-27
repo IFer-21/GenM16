@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Roboto+Condensed:wght@300&display=swap');
+
+body{
+    background-color: #e11212;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
