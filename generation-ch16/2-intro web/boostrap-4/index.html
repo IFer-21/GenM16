@@ -1,18 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>introduccion a boostrap</title>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-</head>
-<body>
-    <h1>introduccion a boostrap</h1>
-    <h2>esto es solo una introduccion </h2>
-    <script src="jQuery/jquery-3.6.0.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--  <h1>introduccion a boostrap</h1>
+    
+    <button class="btn-success">soy un boton</button> -->
+    <div class="container border">
+      <header class="col-12 bg-primary text-white p-2">
+        <h2>esto es solo una introduccion</h2>
+      </header>
+      <nav id="menu" class="col-12 bg-secondary">
+        <ul class="row w-100">
+          <li class="col">Inicio</li>
+          <li class="col">Pagina</li>
+          <li class="col">Pagina</li>
+          <li class="col">Pagina</li>
+          <li class="col">Contacto</li>
+        </ul>
+      </nav>
 
-<button>soy un boton</button>
-</body>
+      <section class="col-12 border">
+        <div class="row">
+          <section class="col-9 border">
+            <h2>productos</h2>
+            <hr />
+            <div class="items row">
+              <div class="col-3 bg-primary m-2">Producto1</div>
+              <div class="col-3 bg-secondary m-2">Producto2</div>
+              <div class="col-3 bg-danger m-2">Producto3</div>
+              
+              <div class="col-3 bg-primary m-2">Producto1</div>
+              <div class="col-3 bg-secondary m-2">Producto2</div>
+              <div class="col-3 bg-danger m-2">Producto3</div>
+
+              <div class="col-3 bg-primary m-2">Producto1</div>
+              <div class="col-3 bg-secondary m-2">Producto2</div>
+              <div class="col-3 bg-danger m-2">Producto3</div>
+            </di>
+            
+            
+          </section>
+          <aside class="col-3 ">
+            <h2>barra laterial</h2>
+          </aside>
+        </div>
+      </section>
+        <footer class="col-lg-12">
+            <h2 class="">Esto es un footer</h2>
+        </footer>
+
+
+    </div>
+
+    <script src="jQuery/jquery-3.6.0.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
