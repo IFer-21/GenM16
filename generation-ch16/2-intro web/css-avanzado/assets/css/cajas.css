@@ -1,21 +1,23 @@
-body{
+body {
     background-color: green;
 }
-.cuadro{
+
+.cuadro {
     width: 200px;
     height: 150px;
     /* display: inline-block; */
-    border-radius: 15px; ;
-   
+    border-radius: 15px;
+    ;
 }
 
-.e1{
+.e1 {
     background-color: aliceblue;
     margin-right: 10px;
     position: static;
 
 }
-.e2{
+
+.e2 {
     background-color: rgb(26, 91, 148);
     margin: 10px;
     position: absolute;
@@ -23,35 +25,36 @@ body{
     right: 50px;
     ;
 }
-.e3{
+
+.e3 {
     background-color: rgb(225, 176, 30);
     margin: 25px;
-    border-radius :  0px 0px 50px; 
-    position:  relative;
+    border-radius: 0px 0px 50px;
+    position: relative;
     left: 50px;
 }
-.e4{
+
+.e4 {
     background-color: rgb(49, 211, 70);
     padding: 20px;
     border: 10px solid rgb(216, 148, 65);
     position: fixed;
-}   
+}
 
-.e5{
-    
+.e5 {
+
     background-color: rgb(255, 11, 11);
     padding: 20px;
     border: 5px solid rgb(30, 105, 18);
     position: sticky;
     top: 0;
-}   
+}
 
-.e6{
+.e6 {
     background-color: rgb(185, 112, 60);
     padding: 20px;
     border: 5px solid rgb(30, 105, 18);
     position: absolute;
     top: 1500px;
-right: 0;
+    right: 0;
 }
-
