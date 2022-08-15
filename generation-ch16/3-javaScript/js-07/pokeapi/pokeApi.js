@@ -1,19 +1,44 @@
 
-const urlPoke = "https://pokeapi.co/api/v2/pokemon/25"
+const urlPoke = "https://pokeapi.co/api/v2/pokemon/" 
 
+
+const inputPoket = document.getElementById("inputPoke")
+//console.log(inputPoket);
+
+const busquedaPoke = document.getElementById("busquedaPoke")
+//console.log(imgPokemon)
 const imgPokemon = document.getElementById("imgPokemon")
-console.log(imgPokemon)
+//console.log(imgPokemon)
 const idPokemon = document.getElementById("idPokemon")
 
 const nombrePokemon = document.getElementById("nombrePokemon")
-console.log(nombrePokemon)
+//console.log(nombrePokemon)
 
 const descPokemon = document.getElementById("descPokemon")
-console.log(descPokemon)
+//console.log(descPokemon)
+
+const listaHabilidades = document.getElementById("listaHabi")
+//console.log(listaHabilidades);
+const listaTipo = document.getElementById("listaTipo")
+//console.log(listaTipo);
+
+//! Eventos
+inputPoket.addEventListener("submit", (e) => {
+    e.preventDefault()
+   // console.log("Boton");
+    const busquedaPoke = document.getElementById("busquedaPoke")
+    let nombreIngresado = busquedaPoke.value
+    //console.log(busquedaPoke.value);
+    //let urlPokemon = urlPoke
+    const urlPokemon = urlPoke + nombreIngresado
+    //console.log(urlPokemon);
+    obtenerPokemon(urlPokemon)
+})
 
 
 async function obtenerPokemon(url){
 
+    try {
     const respuesta = await fetch(url)
     const datos = await respuesta.json()
     /* 
@@ -39,7 +64,42 @@ async function obtenerPokemon(url){
     idPokemon.textContent = pokemon.id
     //descPokemon.textContent = 
 
+    //? Lista de habilidades
+
     
+    let templeate = ''
+    for (let i = 0; i < pokemon.habilidades.length; i++) {
+        const nombreAbility = pokemon.habilidades[i].ability.name;
+        //console.log(nombreAbility);
+        templeate += `<li class="list-group-item">${nombreAbility}</li>`
+    }
+    
+    listaHabilidades.innerHTML = templeate
+
+    //? lista tipo
+    //!Con forLoop
+    /*  let templeateT = ''
+    for (let i = 0; i < pokemon.tipos.length; i++) {
+        const nombreTipo = pokemon.tipos[i].type.name;
+        console.log(nombreTipo);
+        templeateT += `<li class="list-group-item">${nombreTipo}</li>`
+    }    
+    listaTipo.innerHTML += templeateT */
+    //! con forEach
+    let templeateTipos = ''
+    pokemon.tipos.forEach(tipo => {
+        const nombreTipo = tipo.type.name
+       // console.log(tipo.type.name)
+        templeateTipos += `<li class="list-group-item">${nombreTipo}</li>`
+        
+    });
+    
+    listaTipo.innerHTML = templeateTipos 
+    } catch (error) {
+    alert("Nombre incorrecto o numero muy alto")
+    }
 }
 
-obtenerPokemon(urlPoke)
+
+
+
