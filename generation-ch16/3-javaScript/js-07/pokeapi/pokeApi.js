@@ -12,7 +12,7 @@ const imgPokemon = document.getElementById("imgPokemon")
 const idPokemon = document.getElementById("idPokemon")
 
 const nombrePokemon = document.getElementById("nombrePokemon")
-//console.log(nombrePokemon)
+console.log(nombrePokemon)
 
 const descPokemon = document.getElementById("descPokemon")
 //console.log(descPokemon)
