@@ -8,7 +8,7 @@ public class Circulo extends FigurasGeometricas{
 
     @Override
     public float area() {
-        return Math.pow;
+        return 0;//Math.pow;
     }
 
     public float getRadio() {

@@ -9,4 +9,4 @@ public class EjemploFIguras {
 
         Circulo c = new Circulo();
         System.out.println("c es el objeto de triangulo: ");
-}
+}}
